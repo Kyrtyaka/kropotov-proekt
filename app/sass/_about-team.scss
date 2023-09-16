@@ -1,0 +1,42 @@
+.about-team {
+    position: relative;
+    &__title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $basic-white;
+        text-align: center;
+        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.80);
+        font-size: 36px;
+        line-height: normal;
+        letter-spacing: 13px;
+        text-transform: uppercase;
+        opacity: 0.8;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-team {
+        &__title { 
+            font-size:46px;
+            letter-spacing: 63px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .about-team {
+        &__title {
+            font-size: 86px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-team {
+        &__title {
+            font-size: 96px;
+        }
+    }
+}

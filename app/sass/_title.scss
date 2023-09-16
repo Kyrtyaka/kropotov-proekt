@@ -1,0 +1,24 @@
+.title {
+    font-size: 30px;
+    line-height: normal;
+    background: $gradient-red-text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title_sm {
+    color: $basic-white;
+    font-size: 20px;
+    line-height: normal;
+    align-self: stretch;
+}
+
+@media (min-width:768px) {
+    .title_sm {
+        font-size: 30px;
+    }
+    .title {
+        font-size: 38px;
+    }
+}
+

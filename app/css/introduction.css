@@ -1,0 +1,12 @@
+.case-idea {
+  display: grid;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.case-idea__info {
+  margin-bottom: 30px;
+}
+.case-idea__title {
+  padding-right: 30px;
+}
+/*# sourceMappingURL=introduction.css.map */

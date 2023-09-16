@@ -1,0 +1,87 @@
+.collage {
+    &__text-down {
+        color: $main-regular;
+        font-size: 14px;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__item-box {
+        display: grid;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        width: 100%;
+        background: $collage-bg-1;
+        &:nth-child(2) {
+            background: $collage-bg-2;
+        }
+        &:nth-child(3) {
+            background: $collage-bg-3;
+        }
+        &:nth-child(4) {
+            background: $collage-bg-4;
+        }
+        &:nth-child(5) {
+            background: $collage-bg-5;
+        }
+        &:nth-child(6) {
+            background: $collage-bg-6;
+        }
+        &:nth-child(7) {
+            background: $collage-bg-7;
+            display: none;
+        }
+        &:nth-child(8) {
+            background: $collage-bg-8;
+            display: none;
+        }
+        &:nth-child(9) {
+            background: $collage-bg-9;
+            display: none;
+        }
+        &:nth-child(10) {
+            background: $collage-bg-10;
+            display: none;
+        }
+        &:nth-child(11) {
+            background: $collage-bg-11;
+            display: none;
+        }
+        &:nth-child(12) {
+            background: $collage-bg-12;
+            display: none;
+        }
+    }
+    &__img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@media (min-width:768px) {
+    .collage {
+        &__item-box {
+        grid-template-columns: repeat(3, 1fr);
+        }
+        &__item {
+            &:nth-child(n+7):nth-child(-n+12) {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .collage {
+        &__item-box {
+        grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

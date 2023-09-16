@@ -1,0 +1,52 @@
+.app-section {
+    padding-top: 129px;
+    padding-bottom: 30px;
+    text-align: center;
+    &__title {
+        color: $basic-white;
+        font-size: 38px;
+        line-height: normal;
+        margin: 0 7px;
+        margin-bottom: 159px;
+    }
+    &__btn  {
+        border: none;
+        background: transparent;
+        text-align: center;
+        transition-duration: 300ms;
+        transition-property: transform;
+        &:hover .hover  {
+            stroke: $accent;
+            transform: translateY(2%);
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .app-section {
+        padding-top: 269px;
+        &__title {
+            margin-bottom: 417px;
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .app-section {
+        padding-top: 245px;
+        &__title {
+            margin-bottom: 289px;
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    .app-section {
+        padding-top: 261px;
+        &__title {
+            margin-bottom: 305px;
+        }
+    }
+}
+
+

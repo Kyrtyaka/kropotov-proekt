@@ -1,0 +1,43 @@
+.background {
+    background: url(../img/home-page/hp-header/symbol.svg) no-repeat top center, $gradient-supersoft;
+    border-radius: 0px 0px 12px 12px;
+    position: relative;
+    &::after {
+        content:'';
+        position: absolute;
+        background: $grey-bg-border;
+        border-radius: 0px 0px 12px 12px;
+        height: 10px;
+        left: 20px;
+        right: 20px;
+        bottom: -10px;
+    }
+    &::before {
+        content:'';
+        position: absolute;
+        background: $grey-bg-border-down    ;
+        border-radius: 0px 0px 12px 12px;
+        height: 10px;
+        left: 40px;                                                               
+        right: 40px;
+        bottom: -20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .background {
+        background-size: 893px 1024px, cover;
+    }
+}
+
+@media (min-width: 992px) {
+    .background {
+        background-size: 670px 768px, cover;
+    }
+}
+
+@media (min-width: 1200px) {
+    .background {
+        background-size: 697px 799px, cover;
+    }
+}

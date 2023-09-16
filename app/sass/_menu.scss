@@ -1,0 +1,118 @@
+.menu {
+    &__btn {
+        cursor: pointer;
+        background-image: url(../img/header/menu/burger.svg);
+        background-repeat: no-repeat;
+        width: 32px;
+        height: 32px; 
+        background-color: transparent;
+        border: none;
+        border-radius: 8px;
+        &_home {
+            background-image: url(../img/header/menu/burger-home.svg); 
+        }
+        &.active {
+            background-image: url(../img/header/menu/close.svg);
+        }
+        &:hover {
+            background-color: $grey-separator;
+        }
+    }
+    &__list {
+        position: absolute;
+        right: 0;
+        top: 103px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+        list-style-type: none;
+        padding-left: 0;
+        padding: 12px;
+        background-color: $basic-white;
+        & a {
+            text-decoration: none;
+            color: $active-regular;
+            text-align: center;
+            font-size: 24px;
+            line-height: normal;
+            width: auto;
+            flex-grow: 1;
+        }
+    }
+    &__link {
+        width: 100%;
+        padding: 7px 0;
+        border-radius: 12px;
+        background: $grey-bg;
+        &:hover {
+            background: $grey-separator;
+        }
+        &.active a{
+            color: $accent;
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    .menu {
+        &__btn {
+            display: none;
+        }
+        &__list {
+            display: block;
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 0;
+            list-style-type: none;
+        }    
+        &__link {
+            margin-right: 15px;
+            transition-duration: 300ms;
+            transition-property: transform;
+            &:hover {
+                transform: scale(1.1);}
+            & a {
+                color: $active-regular;
+                text-align: right;
+                font-size: 16px;
+                line-height: normal;
+                text-decoration: none;
+                transition-duration: 300ms;
+                transition-property: transform;
+            }
+            &_home a {
+                color: $basic-white;
+            }
+            &.active a {
+                color: $accent;
+                border-bottom: 2px solid $accent;
+            }
+            &:hover a {
+                border-bottom: 2px solid $active-regular;
+                transform: scale(1.1);
+            }
+            &_home:hover a {
+                border-bottom: 2px solid $basic-white;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .menu {
+        &__list {
+            justify-content: flex-end;
+        }
+        &__link {
+            margin-left: 15px;
+            margin-right: 0;
+        }
+        
+    }
+}
