@@ -292,6 +292,7 @@
   padding-left: 0;
   padding: 12px;
   background-color: #FFF;
+  display: none;
 }
 .menu__list a {
   text-decoration: none;
@@ -320,28 +321,37 @@
     display: none;
   }
   .menu__list {
-    display: block;
+    position: static;
+    background-color: transparent;
+    flex-direction: row;
     display: flex;
     justify-content: flex-start;
-    padding-left: 0;
-    list-style-type: none;
+    text-align: start;
+    gap: 0;
+    width: auto;
+    padding: 0;
   }
   .menu__link {
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    width: auto;
     margin-right: 15px;
     transition-duration: 300ms;
     transition-property: transform;
+    background-color: transparent;
   }
   .menu__link:hover {
+    background-color: transparent;
     transform: scale(1.1);
   }
   .menu__link a {
     color: #24A3FF;
     text-align: right;
     font-size: 16px;
-    line-height: normal;
-    text-decoration: none;
     transition-duration: 300ms;
     transition-property: transform;
+    flex-grow: 0;
   }
   .menu__link_home a {
     color: #FFF;
@@ -1158,6 +1168,9 @@
   text-align: center;
   padding-left: 0;
   list-style-type: none;
+}
+.tabs__list {
+  display: inline-block;
 }
 .tabs__element {
   width: 16px;

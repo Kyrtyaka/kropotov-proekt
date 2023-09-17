@@ -1,7 +1,10 @@
 .tabs {
     text-align: center;
-        padding-left: 0;
-        list-style-type: none;
+    padding-left: 0;
+    list-style-type: none;
+    &__list {
+        display: inline-block;
+    }
     &__element {
         width: 16px;
         height: 16px;

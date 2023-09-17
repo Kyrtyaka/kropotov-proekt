@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="preload" href="./fonts/Montserrat-Medium.woff2">
-    <link rel="preload" href="./fonts/Montserrat-Bold.woff2">
+    <link rel="preload" href="./fonts/Montserrat-Medium.woff2" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Montserrat-Bold.woff2" as="font" type="font/woff" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body class="body">
@@ -58,10 +58,10 @@
             </div>
             <div class="produkt">
                 <ul class="produkt__list">
-                    <li class="produkt__item active"><button type="button" class="produkt__btn">Consistent</li>
-                    <li class="produkt__item"><button type="button" class="produkt__btn">Customer oriented</li>
-                    <li class="produkt__item"><button type="button" class="produkt__btn">Innovative</li>
-                    <li class="produkt__item"><button type="button" class="produkt__btn">Business oriented</li>
+                    <li class="produkt__item active"><button type="button" class="produkt__btn">Consistent</button></li>
+                    <li class="produkt__item"><button type="button" class="produkt__btn">Customer oriented</button></li>
+                    <li class="produkt__item"><button type="button" class="produkt__btn">Innovative</button></li>
+                    <li class="produkt__item"><button type="button" class="produkt__btn">Business oriented</button></li>
                 </ul>
                 <p class="produkt__border"></p>
                 <div class="produkt__item-detail active">
@@ -84,7 +84,7 @@
             <section class="service">
                 <div class="service__link-block issue">
                     <a  class="service__link issue__link" href="#">Services</a>
-                    <svg class="issue__arrow" width="12" height="13" viewBox="0 0 12 13" fill="none" class="issue__link-arrow">
+                    <svg class="issue__arrow issue__link-arrow" width="12" height="13" viewBox="0 0 12 13" fill="none">
                         <path class="issue__arrow-color" id="Vector 2" d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2"/>
                     </svg>
                 </div>
@@ -152,7 +152,7 @@
                     <div class="team__info">
                         <div class="team__link-block issue">
                             <a  class="team__link issue__link" href="#">team</a>
-                            <svg class="issue__arrow" width="12" height="13" viewBox="0 0 12 13" fill="none" class="issue__link-arrow">
+                            <svg class="issue__arrow issue__link-arrow" width="12" height="13" viewBox="0 0 12 13" fill="none">
                                 <path class="issue__arrow-color" id="Vector 2" d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2"/>
                             </svg>
                         </div>  
@@ -173,7 +173,7 @@
                     <div class="team__info">
                         <div class="team__link-block issue">
                             <a  class="team__link issue__link" href="#">team</a>
-                            <svg class="issue__arrow" width="12" height="13" viewBox="0 0 12 13" fill="none" class="issue__link-arrow">
+                            <svg class="issue__arrow issue__link-arrow" width="12" height="13" viewBox="0 0 12 13" fill="none">
                                 <path class="issue__arrow-color" id="Vector 2" d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2"/>
                             </svg>
                         </div>  
@@ -194,7 +194,7 @@
                     <div class="team__info">
                         <div class="team__link-block issue">
                             <a  class="team__link issue__link" href="#">team</a>
-                            <svg class="issue__arrow" width="12" height="13" viewBox="0 0 12 13" fill="none" class="issue__link-arrow">
+                            <svg class="issue__arrow issue__link-arrow" width="12" height="13" viewBox="0 0 12 13" fill="none">
                                 <path class="issue__arrow-color" id="Vector 2" d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2"/>
                             </svg>
                         </div>  
@@ -204,9 +204,9 @@
                     </div>
                 </div>
                 <ul class="team__tabs tabs">
-                    <button class="team__tab tabs__element active" type="button"></button>
-                    <button class="team__tab tabs__element" type="button"></button>
-                    <button class="team__tab tabs__element" type="button"></button>
+                    <li class="tabs__list"><button class="team__tab tabs__element active" type="button"></button></li>
+                    <li class="tabs__list"><button class="team__tab tabs__element" type="button"></button></li>
+                    <li class="tabs__list"><button class="team__tab tabs__element" type="button"></button></li>
                 </ul>
             </div>
         </div>
@@ -233,7 +233,7 @@
                 <div class="publications">
                     <div class="publications__link-block issue">
                         <a  class="publications__link issue__link" href="#">Publications</a>
-                        <svg class="issue__arrow" width="12" height="13" viewBox="0 0 12 13" fill="none" class="issue__link-arrow">
+                        <svg class="issue__arrow issue__link-arrow" width="12" height="13" viewBox="0 0 12 13" fill="none">
                             <path class="issue__arrow-color" id="Vector 2" d="M3.5 2L8 6.5L3.5 11" stroke="#24A3FF" stroke-width="2"/>
                         </svg>
                     </div>
@@ -304,7 +304,7 @@
             <div class="footer">
                 <div class="footer__follow">
                     <div class="footer__adress">Kyiv, Mechnikova str., 14/1</div>
-                    <a class="footer__map" chref="">On map</a>
+                    <a class="footer__map" href="#">On map</a>
                 </div>
                 <div class="footer__contacts">
                     <a class="footer__fb" href="#">
