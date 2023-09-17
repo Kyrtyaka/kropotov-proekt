@@ -1,5 +1,5 @@
 .team {
-    padding: 30px 0 60px;
+    padding: 50px 0 56px;
     &__member {
         background: $grey-bg-alt;
         border-radius: 12px;
@@ -17,6 +17,7 @@
     &__img {
         display: block;
         width: 100%;
+        font-size: 0;
     }
     &__info {
         padding: 30px;
@@ -25,6 +26,7 @@
         margin-bottom: 5px;
     }
     &__title {
+        margin-top: 2px;
         margin-bottom: 30px;
         padding-right: 4px;
     }
@@ -41,16 +43,13 @@
         font-weight: 400;
     }
     &__tabs {
-        margin-top: 30px;
-    }
-    &__tab {
-        margin-right: 15px;
+        margin-top: 29px;
     }
 }
 
 @media (min-width:768px) {
     .team {
-        padding-top: 60px;
+        padding-top: 80px;
     }
 }
 

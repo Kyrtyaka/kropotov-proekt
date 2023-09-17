@@ -2,14 +2,20 @@
     padding-top: 129px;
     padding-bottom: 30px;
     text-align: center;
+    position: relative;
+    
+    margin-bottom: -3px;
     &__title {
+        position: absolute;
+        right: -30px;
         color: $basic-white;
         font-size: 38px;
         line-height: normal;
-        margin: 0 7px;
-        margin-bottom: 159px;
+        margin: 6px 0px;
+        font-weight: 700;
     }
     &__btn  {
+        margin-top: 302px;
         border: none;
         background: transparent;
         text-align: center;
@@ -26,16 +32,20 @@
     .app-section {
         padding-top: 269px;
         &__title {
-            margin-bottom: 417px;
+            left: -32px;
+            top: 268px;
+        }
+        &btn-box {
+            margin-bottom: 165px;
         }
     }
 }
 
 @media (min-width:992px) {
     .app-section {
-        padding-top: 245px;
+        padding-top: 279px;
         &__title {
-            margin-bottom: 289px;
+            top: 241px;
         }
     }
 }

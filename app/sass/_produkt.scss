@@ -16,7 +16,9 @@
     }
     &__item {
         padding-left: 0;
+        font-size: 30px;
         margin-right: 30px;
+        line-height: normal;
         &.active {
             background: $gradient-text-red-reversed;
             background-clip: text;
@@ -33,14 +35,13 @@
         background: transparent;
         border: none;
         padding: 0;
-        font-family: inherit;
-    }
-    &__border {
-        border-top: 4px solid $border-produkt;
-        align-self: stretch;
+        font-family: inherit;        
     }
     &__item-detail {
         display: none;
+        border-top: 4px solid $border-produkt;
+        align-self: stretch;
+        padding-top: 30px;
     }
     &__item-detail.active {
         display: block;
@@ -50,9 +51,9 @@
     }
     &__text {
         color: $basic-white;
-        font-size: 16px;
+        font-size: 19px;
         font-weight: 400;
-        line-height: 26px;
+        line-height: 30px;
     }
 }
 
@@ -63,6 +64,9 @@
         &__btn {
             font-size: 38px;
         }
+        &__item-detail {
+            padding-top: 60px;
+        }
     }
 }
 
@@ -70,20 +74,23 @@
     .produkt {
         max-width: 1080px;
         margin: 0 auto;
-        grid-template-columns: 375px min-content 1fr;
+        grid-template-columns: 375px 1fr;
         justify-content: space-between;
-        &__border {
-            border-right: 4px solid $border-produkt;
-        }
         &__list {
-            flex-direction: column;
-            font-size: 0;
-            align-self: start;
+            display: grid;
+            gap: 30px;
+            justify-items: end;
         }
         &__item {
+            align-items: center;
             margin-right: 0;
-            margin-bottom: 30px;
-            align-self: end;
+        }
+        &__item-detail {
+            border-left: 4px solid $border-produkt;
+            border-top: none;
+            padding: 8px 0;
+            padding-left: 60px;
+            
         }
     }
 }

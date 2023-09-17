@@ -3,12 +3,14 @@
     line-height: normal;
     background: $gradient-red-text;
     background-clip: text;
+    font-weight: 700;
     -webkit-text-fill-color: transparent;
 }
 
 .title_sm {
     color: $basic-white;
     font-size: 20px;
+    font-weight: 700;
     line-height: normal;
     align-self: stretch;
 }

@@ -1,6 +1,7 @@
 .service {
+    margin-top: -2px;
     padding-bottom: 60px;
-    &__link {
+    &__link-block {
         margin-bottom: 10px;
     }
     &__link-arrow {
@@ -40,6 +41,7 @@
         line-height: normal;
         margin-bottom: 15px;
         text-decoration: none;
+        margin-right: 11px;
     }
     &__case-text {
         color: $basic-white;
@@ -51,6 +53,10 @@
 @media (min-width:768px) {
     .service {
         padding-bottom: 60px;
+        &__title {
+            margin-top: -2px;
+            margin-bottom: -2px;
+        }
         &__cases {
             grid-template-columns: 1fr 1fr;
             gap: 60px;
@@ -61,8 +67,15 @@
 
 @media (min-width:992px) {
     .service {
+        &__link-block {
+            margin-top: 3px;
+            margin-bottom: 12px;
+        }
         &__cases {
             grid-template-columns: 1fr 1fr 1fr;
+        }
+        &__case-title {
+            margin-right: 10px;
         }
     }
 }
